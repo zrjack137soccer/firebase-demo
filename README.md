@@ -44,3 +44,15 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+## Notes
+
+### Firebase
+Firebase is in version 9, but firebaseui and react-firebaseui are set to work with version 8. To by pass any issues when you install all the SDKs go into the node_modules/firebaseui/dist/esm.js file and the node_modules/react-firebaseui/node_modules/firebaseui/dist/esm.js file and make sure on the first line to change
+`import firebase from 'firebase/app'`
+to
+`import firebase from 'firebase/compat/app'`
+and
+`import 'firebase/auth'`
+to
+`import 'fireabase/compat/auth'`
