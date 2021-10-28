@@ -27,6 +27,25 @@
     <title>React App</title>
   </head>
   <body>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.3/firebase-app.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyBpBfbU5y47O9-oUc9zS018E5IJ0NaEUV0",
+      authDomain: "mutual-auth-dev.firebaseapp.com",
+      projectId: "mutual-auth-dev",
+      storageBucket: "mutual-auth-dev.appspot.com",
+      messagingSenderId: "116495773519",
+      appId: "1:116495773519:web:79d1938128533268bf9f3a"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+  </script>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
